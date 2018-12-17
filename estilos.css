@@ -1,0 +1,167 @@
+*{
+  margin:0;
+  padding: 0;
+}
+body {
+  background: #fff;
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Nunito', sans-serif;*/
+  font-size: 16px;*/
+
+}
+.header {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 20px 10px;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+.wrapper{
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+}
+
+ 
+/*.nav {
+  margin-top: 0px;
+  padding: 0px;
+  width: 100%;
+  overflow:  hidden;
+  background-color: #333;
+  float: left;
+  color: #f2f2f2;
+  text-align: left;
+  padding: 14px 10px;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: 'Nunito', sans-serif
+}*/
+
+input, button {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+}
+
+.main-div  {
+  width: 35%;
+  margin: 0px auto;
+  margin-top:85px;
+  padding: 20px;
+  display: none;
+
+}
+.loggedin-div{
+  width: 40%;
+  margin: 0px auto;
+  margin-top: 0px;
+  padding: 10px;
+  display:none;
+  background-color:white;
+  
+}
+
+li{
+  float: left;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  color: #fff;
+  width: 100%;
+}
+
+.main-div input {
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #fff;
+  padding: 15px;
+  outline: none;
+  width: 100%;
+  margin-bottom: 20px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+}
+ .text {
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #fff;
+  padding: 15px;
+  outline: none;
+  width: 100%;
+  margin-bottom: 20px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+ }
+
+.main-div input:focus {
+  border: 1px solid #777;
+}
+
+.main-div button, .loggedin-div button{
+  background: #5d8ffc;
+  color: #fff;
+  border: 1px solid #5d8ffc;
+  border-radius: 5px;
+  padding: 15px;
+  display: block;
+  width:100%;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+}
+
+.main-div button:hover, .loggedin-div button:hover {
+  background: #fff;
+  color: #5d8ffc;
+  border: 1px solid #5d8ffc;
+  cursor: pointer;
+}

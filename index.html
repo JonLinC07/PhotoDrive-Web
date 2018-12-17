@@ -1,0 +1,77 @@
+<html> 
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <meta charset="utf-8">
+  <title>UniDrive</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+<div class="header">
+  <a href="#default" class="logo">uniDrive</a>
+  <div class="header-right">
+    <a id="cerrar" onclick="logout()">Salir</a>
+  </div>
+</div>
+
+</div>
+ <section class="wrapper">
+ <div id="login_div" class="main-div">
+    <h3>Ingersar</h3>
+    <input type="email" placeholder="Correo..." id="email_field" />
+    <input type="password" placeholder="Contraseña..." id="password_field" />
+
+    <button onclick="login()">Iniciar sesion</button>
+  </div>
+
+
+  <div id="user_div" class="loggedin-div">
+   <h3>Bienvenido: <p id="user_para"></p></h3>
+<!--    <div id="root"> Imagen: </div>
+  <div id="root2"> Latitud: </div>
+  <div id="root3"> Longitud: </div>
+  <div id="root4"> descripcion: </div>-->
+  <br/>
+  <br/>
+
+  <div  class="elementos"id="photos">
+    <div id="photo"></div>
+    <p id="description"></p>
+    <p id="latitude"> </p>
+    <p id="Longitude"></p>
+    <p id="photoID"> </p>    
+  </div>
+
+  <br/>
+  <input type="text" placeholder="ID de la imagen" id="texto" class="text" /> 
+  <br/>
+  <button id="borrar" class="btn btn-warning">Borrar</button>
+  </div>
+ 
+</section>
+
+
+<script src="https://www.gstatic.com/firebasejs/5.6.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyD4Oy3l4BSWHueL-N2O9epgUf1jDibf_GM",
+    authDomain: "unidrive-027.firebaseapp.com",
+    databaseURL: "https://unidrive-027.firebaseio.com",
+    projectId: "unidrive-027",
+    storageBucket: "unidrive-027.appspot.com",
+    messagingSenderId: "108562226951"
+  };{}
+  firebase.initializeApp(config);
+</script>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="js/autentificacion.js"></script>
+
+</body>
+</html>
